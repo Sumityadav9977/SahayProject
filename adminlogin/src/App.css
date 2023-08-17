@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #060c21;
+}
+.form
+{
+    position: relative;
+    background: #060c21;
+    border: 1px solid #000;
+    width: 350px;
+    padding: 40px 40px 60px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form::before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(315deg,#e91e63,#5d02ff);
+    z-index: -1;
+    transform: skew(2deg,1deg);
+    border-radius: 10px;
+}
+.form h2
+{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.form .input
+{
+    margin-top: 40px;
+    text-align: left;
+}
+.form .input .inputBox
+{
+    margin-top: 10px;
+}
+.form .input .inputBox label
+{
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.form .input .inputBox input
+{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+    background:linear-gradient(315deg,#e91e63,#5d02ff) ;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+   
+}
+.form .input .inputBox input[type="submit"]
+{
+    cursor: pointer;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.form .input .inputBox input[type="submit"]:hover
+{
+    background:linear-gradient(315deg,#5d02ff,#e91e63) ;
+ 
+}
+.form .input .inputBox input[type="submit"]:active
+{
+    color: rgba(255, 255, 255, 0.521);
+    background:linear-gradient(315deg,#e91e6271,#5f02ff8c) ;
+    
+}
+.forgot
+{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.forgot a
+{
+    color: #ff0800;
+}
+.social
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social button
+{
+    width: 75%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    background: transparent;
+    border: 3px solid #222;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.social button i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+.social button p
+{
+    color: #fff;
+    font-size: 15px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+.social button:hover
+{
+    background: linear-gradient(315deg,#326cd6,#5d02ff);
+}
+.social button:hover i
+{
+    filter: invert(1);
+}
+.social button:active
+{
+    background:linear-gradient(315deg,#5d02ff,#e91e63)
+}
+
+
+
+
+
+
+/* /////////////////////////////////online////////// */
+.wrapper {
+    height: 100vh;
+    
+  }
+  .login {
+    width: 300px;
+    padding: 20px;
+    height: min-content;
+    border-radius: 5px;
+    
+    background-color: rgb(238, 238, 238);
+  }
+  main {
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  /*  */
+  .divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+  .h-custom {
+  height: 100%;
+  }
+}
+.modal{
+    z-index: 999999 !important;
+}
+
+/* ///////////////////////File Upload //////////////// */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+.form-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #7b2cbf;
+	display: flex;
+   	justify-content: center;
+	align-items: center;
+}
+.upload-files-container {
+	background-color: #f7fff7;
+	width: 420px;
+	padding: 30px 60px;
+	border-radius: 40px;
+	display: flex;
+   	align-items: center;
+   	justify-content: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 20px, rgba(0, 0, 0, 0.28) 0px 6px 6px;
+}
+.drag-file-area {
+	border: 2px dashed #7b2cbf;
+	border-radius: 40px;
+	margin: 10px 0 15px;
+	padding: 30px 50px;
+	width: 350px;
+	text-align: center;
+}
+.drag-file-area .upload-icon {
+	font-size: 50px;
+}
+.drag-file-area h3 {
+	font-size: 26px;
+	margin: 15px 0;
+}
+.drag-file-area label {
+	font-size: 19px;
+}
+.drag-file-area label .browse-files-text {
+	color: #7b2cbf;
+	font-weight: bolder;
+	cursor: pointer;
+}
+.browse-files span {
+	position: relative;
+	top: -25px;
+}
+.default-file-input {
+	opacity: 0;
+}
+.cannot-upload-message {
+	background-color: #ffc6c4;
+	font-size: 17px;
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	padding: 5px 10px 5px 30px;
+	border-radius: 5px;
+	color: #BB0000;
+	display: none;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.cannot-upload-message span, .upload-button-icon {
+	padding-right: 10px;
+}
+.cannot-upload-message span:last-child {
+	padding-left: 20px;
+	cursor: pointer;
+}
+.file-block {
+	color: #f7fff7;
+	background-color: #7b2cbf;
+  	transition: all 1s;
+	width: 390px;
+	position: relative;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 0 15px;
+	padding: 10px 20px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.file-info {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+}
+.file-icon {
+	margin-right: 10px;
+}
+.file-name, .file-size {
+	padding: 0 3px;
+}
+.remove-file-icon {
+	cursor: pointer;
+}
+.progress-bar {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 4.5%;
+	width: 0;
+	height: 5px;
+	border-radius: 25px;
+	background-color: #4BB543;
+}
+.upload-button {
+	font-family: 'Montserrat';
+	background-color: #7b2cbf;
+	color: #f7fff7;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	border: none;
+	border-radius: 20px;
+	margin: 10px;
+	padding: 7.5px 50px;
+	cursor: pointer;
+}
+
